@@ -31,7 +31,7 @@ import cv2
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
-path = 'F:\yunxu\mnist\program\\test_img/5331.png'
+path = 'test_img/5331.png'
 im = Image.open(path).convert('L')
 
 pixel_value = list(im.getdata())
