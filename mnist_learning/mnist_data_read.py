@@ -11,6 +11,8 @@ import os
 
 #use function as u
 
+
+# image format is: 1.png
 def read_images(filename):
     f = open(filename, 'rb')
     index = 0
@@ -31,7 +33,7 @@ def read_images(filename):
         print('save' + str(i) + 'image')
         image.save('test_img\\' + str(i) + '.png')
 
-
+# write label to txt file as: The 1 picture is: 2
 def read_labels(filename):
     f = open(filename, 'rb')
     buf = f.read()
